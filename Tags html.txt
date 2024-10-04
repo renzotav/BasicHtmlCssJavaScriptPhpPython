@@ -1,0 +1,127 @@
+O site do W3C contém a lista completa de atributos e combinações. 
+
+
+//imagem
+<img
+src="link.jpg"
+alt="nome do conteudo" //(texto alternativo caso a imagem nao carregue)
+width="500" //(largura)
+height="600"> //(comprimento)
+
+//paragrafo
+<p> texto </p>
+
+//destacar uma palavra que considere importante
+<strong> palavra </strong>
+
+//enfatizar uma palavra
+<em> palavra </em>
+
+//riscar uma palavra
+<s> palavra </s>
+
+//desce um pouco o caractere
+<sub> palavra </sub>
+
+//titulo dentro da pagina
+<h1> texto </h1> //h2, h3 sao subtitulos
+
+//link
+<a href="link"> Nome do botao de link </a>
+
+//para navegar
+<nav> conteudo </nav>
+
+//pula linha
+<br/>
+
+//botão
+<button> </button>
+
+//formulário com php
+ <form action="welcome.php" method="post">
+        Name: <input type="text" name="name"><br>
+        E-mail: <input type="text" name="email"><br>
+        <input  type="submit">
+
+//Inclui um bloco de conteúdo que deve ser usado quando se deseja inserir um artigo, como um post de um blog, por exemplo.
+<article>
+
+//Define uma seção no documento. É normalmente utilizado para agrupar seções. Por exemplo: uma <section> poderia conter vários <article>.
+<section>
+
+
+//Aponta a inserção de um texto pré-formatado.
+<pre>
+
+
+//Aponta o agrupamento de algum tipo de conteúdo que não tenha nenhuma semântica específica ou que não se encaixe bem dentro de uma tag semântica, embora não seja considerada semântica.
+<div>
+
+
+//Apresenta semelhança com a <div>. Entretanto, enquanto a <div> é um elemento não semântico no bloco (quando usada, quebra o conteúdo em uma seção), a <span> é embutida (não quebra o conteúdo, apenas o agrupa).
+<span>
+
+
+//Aponta a inserção de uma linha horizontal no documento. Normalmente, é utilizada quando se pretende alterar a temática de um texto.
+<hr>
+
+
+//Aplica o efeito de itálico em um texto.
+<i>
+
+//negrito
+<b>
+
+//Listas
+//ordenada
+<ol>
+
+//não ordenada
+<ul>
+
+//Tabelas
+<table>
+
+//cabeçalho da tabela
+<tr>
+
+//itens, tmb representa colunas, é usada para exibir o titulo da coluna
+<th>
+
+//registros
+<td>
+
+//descrição dos itens
+<dd>
+
+//Armazena o cabeçalho, sendo composto por linhas e colunas
+<thead>
+
+//Armazena o rodape da tabela, tendo função semantica em termos de estruturação
+<tfoot>
+
+//midias de video
+<video controls
+widht=""
+height="">
+
+<source src="link"
+type="video/mp4">
+
+<source src="link"
+type="video/webm">
+
+Seu browser não oferece suporte para a tag de video
+</video>
+
+//Mídias de áudio
+<audio src="link"
+controls>
+Seu browser não suporta a tag audio.
+</audio>
+
+//site oficial html5
+https://html.spec.whatwg.org/
+
+
