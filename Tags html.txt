@@ -125,3 +125,71 @@ Seu browser não suporta a tag audio.
 https://html.spec.whatwg.org/
 
 
+//Tags, Metodos e tipos para formulários
+<form>
+Container principal do formulário.
+
+
+<input>
+Campo do formulário. Como há diversos tipos de campos, fazemos uso do atributo “type” para informar o tipo a ser utilizado – conforme veremos mais adiante.
+
+
+<textarea>
+Campo de texto de múltiplas linhas.
+
+
+<select> e <option>
+Campos de seleção, onde o container é definido pela tag <select> e os itens pela tag <option>.
+
+
+<button>
+Campo de botão. Permite que uma ação seja executada no formulário – enviar o formulário; limpar os dados etc.
+
+
+<label>
+Campo usado para definir um título, uma legenda, que descreva para que serve cada campo do formulário.
+
+
+<fieldset> 
+Cria seções dentro do formulário, ajudando a separar os campos no código e a visualizar a página no navegador.
+
+<form>
+action
+Define a URL (endereço) para a qual os dados do formulário serão enviados.
+
+
+<form>
+method
+Define o método HTTP (POST ou GET) para envio dos dados.
+
+
+<label>
+for
+Vincula a tag <label> ao campo ao qual ela se refere. Esse vínculo faz com que seja possível clicar na label para ativar o campo relacionado.
+
+<input>
+minlength, maxlength
+Define a quantidade de caracteres mínima e máxima, respectivamente, permitida em um campo.
+
+
+<input>, <button>
+type
+Define o tipo do campo e, sobretudo, como ele se comporta.
+
+<option>
+value
+Define o valor do campo, e também pode ser utilizado na tag <input>. No caso da <option>, os seus valores possíveis são previamente definidos quando a página é codificada. Já na <input>, embora também possa ser previamente definido, normalmente é o usuário quem define o seu valor.
+
+
+//types
+
+
+Tipos comuns:
+
+“password”: mascara o texto com asteriscos.
+“hidden”: esconde o campo para não ser exibido no navegador.
+“checkbox”: usado para seleção de valor através de click/check.
+“radio”: usado para seleção exclusiva de valor – quando é apresentada mais de uma opção, apenas uma poderá ser selecionada, ao contrário do tipo “checkbox”.
+“submit”: associado à tag <button>, dispara o evento que envia/submete o formulário.
+“reset”: associado à tag <button>, dispara o evento que limpa os valores do formulário.
+“button”: uma tag <input> pode ser do tipo “button” – exercendo, assim, a mesma função da tag <button>.
