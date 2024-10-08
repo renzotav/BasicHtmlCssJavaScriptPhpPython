@@ -193,3 +193,35 @@ Tipos comuns:
 “submit”: associado à tag <button>, dispara o evento que envia/submete o formulário.
 “reset”: associado à tag <button>, dispara o evento que limpa os valores do formulário.
 “button”: uma tag <input> pode ser do tipo “button” – exercendo, assim, a mesma função da tag <button>.
+
+//Novos atributos e tipos
+
+//Atributos
+placeholder
+Função: Exibir um texto no campo de input.
+Comentário: Utilizado para dar uma dica ao usuário sobre o dado a ser inserido.
+
+required
+Função: Determinar se um campo é obrigatório.
+Comentário: Utilizado na validação dos dados de um formulário.
+
+autofocus
+Função: Fixar o foco no campo.
+Comentário: Utilizado quando desejamos que, ao carregar o formulário, um determinado campo seja focado.
+
+pattern
+Função: Validar o valor de um campo com base em uma expressão regular.
+(as RegEX – expressões regulares – podem ser consideradas um recurso de linguagem de programação para a análise e manipulação de texto)
+Comentário: O campo de tel. é um bom exemplo de utilização desse atributo. Com ele podemos, por exemplo, determinar a quantidade de caracteres e o formato esperado para um campo.
+
+//Tipos
+tel
+Função: Inserir números de telefone.
+Comentário: Para uma melhor usabilidade, deve ser usado em conjunto com o atributo “pattern”.
+datetime
+Função: Inserir datas com o fuso horário em UTC a partir de um calendário.
+date
+Função: Inserir datas sem fuso horário a partir de um calendário.
+number
+Função: Inserir números.
+Comentário: Cria um componente diferente do imput normal, em que, por meio de setas, os números podem ser incrementados ou decrementados.
