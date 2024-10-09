@@ -1,0 +1,227 @@
+O site do W3C contém a lista completa de atributos e combinações. 
+
+
+//imagem
+<img
+src="link.jpg"
+alt="nome do conteudo" //(texto alternativo caso a imagem nao carregue)
+width="500" //(largura)
+height="600"> //(comprimento)
+
+//paragrafo
+<p> texto </p>
+
+//destacar uma palavra que considere importante
+<strong> palavra </strong>
+
+//enfatizar uma palavra
+<em> palavra </em>
+
+//riscar uma palavra
+<s> palavra </s>
+
+//desce um pouco o caractere
+<sub> palavra </sub>
+
+//titulo dentro da pagina
+<h1> texto </h1> //h2, h3 sao subtitulos
+
+//link
+<a href="link"> Nome do botao de link </a>
+
+//para navegar
+<nav> conteudo </nav>
+
+//pula linha
+<br/>
+
+//botão
+<button> </button>
+
+//formulário com php
+ <form action="welcome.php" method="post">
+        Name: <input type="text" name="name"><br>
+        E-mail: <input type="text" name="email"><br>
+        <input  type="submit">
+
+//Inclui um bloco de conteúdo que deve ser usado quando se deseja inserir um artigo, como um post de um blog, por exemplo.
+<article>
+
+//Define uma seção no documento. É normalmente utilizado para agrupar seções. Por exemplo: uma <section> poderia conter vários <article>.
+<section>
+
+
+//Aponta a inserção de um texto pré-formatado.
+<pre>
+
+
+//Aponta o agrupamento de algum tipo de conteúdo que não tenha nenhuma semântica específica ou que não se encaixe bem dentro de uma tag semântica, embora não seja considerada semântica.
+<div>
+
+
+//Apresenta semelhança com a <div>. Entretanto, enquanto a <div> é um elemento não semântico no bloco (quando usada, quebra o conteúdo em uma seção), a <span> é embutida (não quebra o conteúdo, apenas o agrupa).
+<span>
+
+
+//Aponta a inserção de uma linha horizontal no documento. Normalmente, é utilizada quando se pretende alterar a temática de um texto.
+<hr>
+
+
+//Aplica o efeito de itálico em um texto.
+<i>
+
+//negrito
+<b>
+
+//Listas
+//ordenada
+<ol>
+
+//não ordenada
+<ul>
+
+//Tabelas
+<table>
+
+//cabeçalho da tabela
+<tr>
+
+//itens, tmb representa colunas, é usada para exibir o titulo da coluna
+<th>
+
+//registros
+<td>
+
+//descrição dos itens
+<dd>
+
+//Armazena o cabeçalho, sendo composto por linhas e colunas
+<thead>
+
+//Armazena o rodape da tabela, tendo função semantica em termos de estruturação
+<tfoot>
+
+//midias de video
+<video controls
+widht=""
+height="">
+
+<source src="link"
+type="video/mp4">
+
+<source src="link"
+type="video/webm">
+
+Seu browser não oferece suporte para a tag de video
+</video>
+
+//Mídias de áudio
+<audio src="link"
+controls>
+Seu browser não suporta a tag audio.
+</audio>
+
+//site oficial html5
+https://html.spec.whatwg.org/
+
+
+//Tags, Metodos e tipos para formulários
+<form>
+Container principal do formulário.
+
+
+<input>
+Campo do formulário. Como há diversos tipos de campos, fazemos uso do atributo “type” para informar o tipo a ser utilizado – conforme veremos mais adiante.
+
+
+<textarea>
+Campo de texto de múltiplas linhas.
+
+
+<select> e <option>
+Campos de seleção, onde o container é definido pela tag <select> e os itens pela tag <option>.
+
+
+<button>
+Campo de botão. Permite que uma ação seja executada no formulário – enviar o formulário; limpar os dados etc.
+
+
+<label>
+Campo usado para definir um título, uma legenda, que descreva para que serve cada campo do formulário.
+
+
+<fieldset> 
+Cria seções dentro do formulário, ajudando a separar os campos no código e a visualizar a página no navegador.
+
+<form>
+action
+Define a URL (endereço) para a qual os dados do formulário serão enviados.
+
+
+<form>
+method
+Define o método HTTP (POST ou GET) para envio dos dados.
+
+
+<label>
+for
+Vincula a tag <label> ao campo ao qual ela se refere. Esse vínculo faz com que seja possível clicar na label para ativar o campo relacionado.
+
+<input>
+minlength, maxlength
+Define a quantidade de caracteres mínima e máxima, respectivamente, permitida em um campo.
+
+
+<input>, <button>
+type
+Define o tipo do campo e, sobretudo, como ele se comporta.
+
+<option>
+value
+Define o valor do campo, e também pode ser utilizado na tag <input>. No caso da <option>, os seus valores possíveis são previamente definidos quando a página é codificada. Já na <input>, embora também possa ser previamente definido, normalmente é o usuário quem define o seu valor.
+
+
+//types
+
+
+Tipos comuns:
+
+“password”: mascara o texto com asteriscos.
+“hidden”: esconde o campo para não ser exibido no navegador.
+“checkbox”: usado para seleção de valor através de click/check.
+“radio”: usado para seleção exclusiva de valor – quando é apresentada mais de uma opção, apenas uma poderá ser selecionada, ao contrário do tipo “checkbox”.
+“submit”: associado à tag <button>, dispara o evento que envia/submete o formulário.
+“reset”: associado à tag <button>, dispara o evento que limpa os valores do formulário.
+“button”: uma tag <input> pode ser do tipo “button” – exercendo, assim, a mesma função da tag <button>.
+
+//Novos atributos e tipos
+
+//Atributos
+placeholder
+Função: Exibir um texto no campo de input.
+Comentário: Utilizado para dar uma dica ao usuário sobre o dado a ser inserido.
+
+required
+Função: Determinar se um campo é obrigatório.
+Comentário: Utilizado na validação dos dados de um formulário.
+
+autofocus
+Função: Fixar o foco no campo.
+Comentário: Utilizado quando desejamos que, ao carregar o formulário, um determinado campo seja focado.
+
+pattern
+Função: Validar o valor de um campo com base em uma expressão regular.
+(as RegEX – expressões regulares – podem ser consideradas um recurso de linguagem de programação para a análise e manipulação de texto)
+Comentário: O campo de tel. é um bom exemplo de utilização desse atributo. Com ele podemos, por exemplo, determinar a quantidade de caracteres e o formato esperado para um campo.
+
+//Tipos
+tel
+Função: Inserir números de telefone.
+Comentário: Para uma melhor usabilidade, deve ser usado em conjunto com o atributo “pattern”.
+datetime
+Função: Inserir datas com o fuso horário em UTC a partir de um calendário.
+date
+Função: Inserir datas sem fuso horário a partir de um calendário.
+number
+Função: Inserir números.
+Comentário: Cria um componente diferente do imput normal, em que, por meio de setas, os números podem ser incrementados ou decrementados.
