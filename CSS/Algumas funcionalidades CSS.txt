@@ -50,7 +50,13 @@ Define a largura de um elemento.
 
 Define a profundidade de um elemento – usado, por exemplo, para sobreposição de elementos.
 
+//outline-color
 
+Cor da borda externa
+
+//line-height
+
+Altera a espaçamento vertical entre as linhas de texto
 
 
 Exemplos de alguns usos e outros usos de mesma função:
@@ -141,3 +147,67 @@ ul{
 
 ul{ list-style: disc outside url(imagem.jpg);
 }
+
+///Lista básica de pseudoclasses
+
+//active
+
+Como declarar: a:active
+
+Para que serve: Selecionar todos os links ativos.
+
+//checked
+
+Como declarar: input:checked
+
+Para que serve: Selecionar todos os campos input checados.
+
+//first-child
+
+Como declarar: li:first-child
+
+Para que serve: Selecionar todo primeiro item de lista.
+
+//last-child
+
+Como declarar: li:last-child
+
+Para que serve: Selecionar todo último item de lista.
+
+//hover
+
+Como declarar: div:hover
+
+Para que serve: Selecionar todas as divs no evento mouseover.
+
+///Pseudoelementos
+
+//after
+
+Exemplo: img::after
+
+Para que serve: Inserir conteúdo após o elemento indicado.
+
+//before
+
+Exemplo: h1::before
+
+Para que serve: Inserir conteúdo antes do elemento indicado.
+
+//first letter
+
+Exemplo: p::first-letter
+
+Para que serve: Selecionar a primeira letra do elemento indicado.
+
+//first line
+
+Exemplo: p::first-line
+
+Para que serve: Selecionar a primeira linha do elemento indicado.
+
+//selection
+
+Exemplo: p::selection
+
+Para que serve: Selecionar a porção de um elemento que é selecionado pelo usuário

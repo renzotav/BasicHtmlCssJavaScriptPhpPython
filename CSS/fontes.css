@@ -1,0 +1,23 @@
+ @font-face {
+    font-family: Sixtyfour;
+    src: url(SixtyfourConvergence-Regular-VariableFont_BLED_SCAN_XELA_YELA.woff) format("woff");
+}
+
+@font-face {
+    font-family: Quitcher;
+    src: url(Qwitcher_Grypen/QwitcherGrypen-Regular.woff) format("woff");
+    
+}
+#font1 {
+    font-family: Sixtyfour;
+    font-size: 50px;
+    font-weight: bold;
+    
+    
+}
+
+#font2{
+    font-family: Quitcher;
+    font-size: 50px;
+    font-weight: bold;
+}
