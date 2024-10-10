@@ -1,0 +1,143 @@
+//background
+
+Estiliza o fundo de elementos. Para tal, há uma série de propriedades, além do atalho “background”, como “background-color”, “background-image” etc.
+
+//border
+
+Controla as bordas de um elemento, sendo possível definir suas cores, espessuras, entre outras propriedades.
+
+//top, bottom, right e left
+
+Controlam o posicionamento, relativo ou absoluto, dos elementos em relação a outros elementos.
+
+//color
+
+Estiliza a cor do conteúdo textual de um elemento.
+
+//font-family, font-size, font-weight etc.
+
+Série de propriedades usada para estilizar o conteúdo textual de um elemento no que diz respeito à fonte, como a família de fontes, seu tamanho, peso (mais clara ou mais escura - negrito) etc.
+
+//height
+
+Define a altura de um elemento.
+
+//list-style, list-style-image etc.
+
+Propriedades usadas para estilizar as listas HTML.
+
+//margin
+
+Controla a distância em função da margem de um elemento para outro.
+
+//padding
+
+Controla a distância entre as bordas e o conteúdo de um elemento.
+
+//position
+
+Define como um elemento deve ser posicionado na página.
+
+//text-...
+
+Muitas propriedades controlam o comportamento do conteúdo textual de um elemento, como alinhamento (justificado, centralizado etc.), aparência (sublinhado etc.) etc.
+
+//width
+
+Define a largura de um elemento.
+
+//z-index
+
+Define a profundidade de um elemento – usado, por exemplo, para sobreposição de elementos.
+
+
+
+
+Exemplos de alguns usos e outros usos de mesma função:
+
+p{
+ ;margin-top: 10px;
+ margin-bottom: 8px;
+ margin-right: 6px;
+ margin-left: 4px;
+}
+
+=
+
+	p{
+ margin: 10px 6px 8px 4px;
+}
+
+
+p{
+ padding-top: 10px;
+ padding-bottom: 8px;
+ padding-right: 6px;
+ padding-left: 4px;
+}
+
+=
+
+	p{
+ padding: 10px 6px 8px 4px;
+}
+
+
+
+p{
+ border-width: 2px;
+ border-style: solid;
+ border-color: #cccccc;
+}
+
+
+=
+
+	p{
+ border: 2px solid #cccccc;
+}
+
+
+
+p{
+ background-color: #000000;
+ background-image: url(imagem.jpg);
+ background-repeat: no-repeat;
+ background-position: top left;
+}
+
+=
+
+	p{
+ background: #000000 url(imagem.jpg) no-repeat top left;
+}
+
+
+
+p{
+ font-size: 1em;
+ line-height: 1.5em;
+ font-weight: bold;
+ font-style: italic;
+ font-family: verdana;
+}
+
+=
+
+	p{
+ 1em/1.5em bold italic verdana;
+}
+
+
+
+ul{
+ list-style: #000000;
+ list-style-type: disc;
+ list-style-position: outside;
+ list-style-image: url(imagem.jpg);
+}	
+
+=
+
+ul{ list-style: disc outside url(imagem.jpg);
+}
