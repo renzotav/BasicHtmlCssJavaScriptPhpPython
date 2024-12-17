@@ -1,0 +1,128 @@
+//Criar tabelas
+
+
+-- Criação de tabela chamada "teste1"
+
+CREATE TABLE teste1 (
+    id SERIAL PRIMARY KEY, -- Chave primária auto-incrementada
+    nome VARCHAR(100) NOT NULL, -- Coluna para armazenar nomes com limite de 100 caracteres
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Coluna com data e hora de criação
+);
+
+-- Criação de tabela chamada "teste2"
+
+CREATE TABLE teste2 (
+    id SERIAL PRIMARY KEY,
+    descricao TEXT, -- Coluna para textos longos
+    teste1_id INT REFERENCES teste1(id) -- Chave estrangeira vinculada à tabela "teste1"
+);
+
+
+
+//Inserir dados
+
+
+-- Inserir dados na tabela "teste1"
+
+INSERT INTO teste1 (nome) VALUES ('Produto A');
+INSERT INTO teste1 (nome) VALUES ('Produto B');
+
+-- Inserir dados na tabela "teste2"
+
+INSERT INTO teste2 (descricao, teste1_id) VALUES ('Descrição do Produto A', 1);
+INSERT INTO teste2 (descricao, teste1_id) VALUES ('Descrição do Produto B', 2);
+
+
+
+//Selecionar dados
+
+
+
+-- Selecionar todos os dados da tabela "teste1"
+
+SELECT * FROM teste1;
+
+-- Selecionar dados específicos com filtro
+
+SELECT * FROM teste2 WHERE teste1_id = 1;
+
+-- Consultar com join entre "teste1" e "teste2"
+
+SELECT t1.nome, t2.descricao
+FROM teste1 t1
+JOIN teste2 t2 ON t1.id = t2.teste1_id;
+
+
+
+//Atualizar dados
+
+
+
+-- Atualizar o nome de um registro na tabela "teste1"
+
+UPDATE teste1
+SET nome = 'Produto C'
+WHERE id = 1;
+
+-- Atualizar a descrição de um registro na tabela "teste2"
+
+UPDATE teste2
+SET descricao = 'Nova descrição para o Produto A'
+WHERE id = 1;
+
+
+
+//Excluir dados
+
+
+
+-- Deletar um registro da tabela "teste1"
+
+DELETE FROM teste1 WHERE id = 2;
+
+-- Deletar todos os registros da tabela "teste2"
+
+DELETE FROM teste2;
+
+
+
+//Excluir tabelas
+
+
+
+-- Excluir a tabela "teste1" e "teste2"
+
+DROP TABLE teste2;
+DROP TABLE teste1;
+
+
+
+//Alterar tabelas
+
+
+
+-- Adicionar uma nova coluna na tabela "teste1"
+
+ALTER TABLE teste1 ADD COLUMN email VARCHAR(255);
+
+-- Remover uma coluna da tabela "teste2"
+
+ALTER TABLE teste2 DROP COLUMN descricao;
+
+-- Alterar o tipo de uma coluna
+
+ALTER TABLE teste1 ALTER COLUMN nome TYPE TEXT;
+
+
+
+//Verificar estrutura de tabelas
+
+
+
+-- Mostrar detalhes da tabela "teste1"
+
+\d teste1;
+
+-- Listar todas as tabelas no banco de dados atual
+
+\dt;
